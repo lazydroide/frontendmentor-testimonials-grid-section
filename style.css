@@ -23,7 +23,7 @@ img, picture, svg, video, canvas{
 @media(prefers-reduced-motion: no-preference) {
     :has(:target) {
         scroll-behavior: smooth;
-        scroll-padding-top: 3rem; /* para separar el punto de stop de la parte superior de la pantalla*/
+        scroll-padding-top: 3rem; 
     }
 }
  
@@ -51,8 +51,9 @@ img, picture, svg, video, canvas{
     --color-light-grayish-blue-50: hsla(210, 46%, 95%, 50%);
     --color-light-grayish-blue-70: hsla(210, 46%, 95%, 70%);
 
-    --color-border-1: white;
-    --color-border-2: black;
+    --color-border-1: #9D76D6;
+    --color-border-2: #454E5F;
+    --color-border-3: #FCF7F1;
 
     --fw-500: 500;
     --fw-600: 600;
@@ -163,7 +164,7 @@ main {
 .one {
     --bg-color: var(--color-moderate-violet);
     --text-color: var(--color-light-grayish-blue);
-    --border-color: var(var(--color-border-1));
+    --border-color: var(--color-border-1);
     grid-area: one;
     
     background-image: url(./images/bg-pattern-quotation.svg);
@@ -177,7 +178,7 @@ main {
 .two {
     --bg-color: var(--color-very-dark-grayish-blue);
     --text-color: var(--color-light-grayish-blue);
-    --border-color: var(var(--color-border-1));
+    --border-color: var(--color-border-2);
     grid-area: two;
 
     padding-bottom: 27px;
@@ -186,21 +187,21 @@ main {
 .three {
     --bg-color: var(--color-white);
     --text-color: var(--color-very-dark-blackish-blue);
-    --border-color: var(var(--color-border-1));
+    --border-color: var(--color-border-3);
     grid-area: three;
 }
 
 .four {
     --bg-color: var(--color-very-dark-blackish-blue);
     --text-color: var(--color-white);
-    --border-color: var(var(--color-border-1));
+    --border-color: var(--color-border-1);
     grid-area: four;
 }
 
 .five {
     --bg-color: var(--color-white);
     --text-color: var(--color-very-dark-blackish-blue);
-    --border-color: var(var(--color-border-1));
+    --border-color: var(--color-border-3);
     grid-area: five;
 }
 
